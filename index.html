@@ -17,28 +17,35 @@
         <form novalidate action="#" id="example" method="post">
           <legend>Example form with custom validation by JS</legend>
           <div class="input email">
-            <label for="email">E-mail</label>
+            <label for="email">
+              <span>E-mail</span>
+              <span class="invalid"></span>
+            </label>
             <input type="email" name="email" id="email" required />
-            <span class="invalid"></span>
           </div>
 
           <div class="input pass">
-            <label for="pass">Password</label>
+            <label for="pass">
+              <span>Password</span>
+              <span class="invalid"></span>
+            </label>
             <input
               type="password"
               minlength="10"
               maxlength="18"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{10,}$"
               name="pass"
               id="pass"
               required
             />
-            <span class="invalid"></span>
           </div>
 
           <div class="input confirm">
-            <label for="confirm">Confirm password</label>
+            <label for="confirm">
+              <span>Confirm password</span>
+              <span class="invalid"></span>
+            </label>
             <input type="password" name="confirm" id="confirm" required />
-            <span class="invalid"></span>
           </div>
           <button type="submit" form="example">Submit</button>
         </form>
