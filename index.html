@@ -18,11 +18,13 @@
           <legend>Example form with custom validation by JS</legend>
           <div class="input email">
             <label for="email">E-mail</label>
+            <span class="invalid"></span>
             <input type="email" name="email" id="email" required />
           </div>
 
           <div class="input pass">
             <label for="pass">Password</label>
+            <span class="invalid"></span>
             <input
               type="password"
               minlength="8"
@@ -35,6 +37,7 @@
 
           <div class="input confirm">
             <label for="confirm">Confirm password</label>
+            <span class="invalid"></span>
             <input type="password" name="confirm" id="confirm" required />
           </div>
           <button type="submit" form="example">Submit</button>
