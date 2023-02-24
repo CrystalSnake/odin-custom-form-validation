@@ -25,7 +25,7 @@ function validatePassword() {
     passwordError.textContent = 'Maximum length 18 characters';
   } else if (password.validity.patternMismatch) {
     passwordError.textContent =
-      'The password must contain at least one letter, one number and one special character';
+      'The password must contain at least one uppercase letter, one lowercase letter, one number and one special character';
   } else {
     passwordError.textContent = '';
   }
