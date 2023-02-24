@@ -47,8 +47,8 @@ function validateForm() {
   validateEmail(email);
   validatePassword(password);
   validateConfirm(confirmPass);
-  if (form.checkValidity()) {
-    console.log('Success!');
+  if (form.checkValidity() && confirmPass.value === password.value) {
+    alert('Success!');
   }
 }
 
